@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const StyledHeader = styled.header`
-    height: 95vh;
+    height: 100vh;
     background-image: linear-gradient(
         to right, 
         #658adb,
@@ -10,7 +10,6 @@ export const StyledHeader = styled.header`
     background-size: cover;
     background-position: top;
     position: relative;
-    position:relative;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
@@ -25,9 +24,23 @@ export const Logo = styled.img`
 
 export const HeaderTitleBox = styled.div`
     position: absolute;
-    top:40%;
-    left: 20%;
+    top: 40vh;
+    transform: translateY(-50%);
     text-align: center;
+
+    @media (min-width: 800px) {
+        left: 10vw;
+      }
+
+      @media (min-width: 1200px) {
+        top: 45vh;
+        left: 10vw;
+      }
+
+      @media (min-width: 1500px) {
+        left: 20vw;
+      }
+    
 `
 
 export const HeaderTitle = styled.span`

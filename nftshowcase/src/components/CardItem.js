@@ -1,25 +1,22 @@
 import React from 'react';
+import {CardLink, CardImgContainer, CardBody, NFTSales} from "./styles/CardGrid.styled";
 
 
 const CardItem = ({asset}) => {
   return (
-    <a href={asset.external_url}>
+    <CardLink href={asset.external_url}>
       <div className="card-container">
-        <div className="card-header">
-          <img alt='' className='card-img' src={asset.banner_image_url}></img>
-        </div>
-        <div className='card-body'>
-           <div className="card-info">
-              <h5 className="card-name">{asset.name}</h5>
-              <span className="nft-id">Average Price: {asset.stats.seven_day_average_price}</span>
-           </div>
-            <div className="nft-bid">
-              <h5>Total sales</h5>
+        <CardImgContainer url={asset.banner_image_url}/>
+          <CardBody>
+            <h5 className="card-name">{asset.name}</h5>
+            <span className="nft-id">Average Price: {asset.stats.seven_day_average_price}</span>
+            <NFTSales>
+              <span className='bid'>Total sales</span>
               <span className='bid'>{asset.stats.total_sales}</span>
-            </div>
-        </div>
+            </NFTSales>
+          </CardBody>
       </div>
-    </a>
+    </CardLink>
   
   )
 }

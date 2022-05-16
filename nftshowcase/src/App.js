@@ -4,6 +4,7 @@ import CardGrid from './components/CardGrid';
 import GlobalStyles from './components/styles/Global';
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import {SectionTitle} from "./components/styles/CardGrid.styled";
 
 function App() {
 
@@ -22,6 +23,8 @@ function App() {
     <div className="App">
       <GlobalStyles/>
           <Header/>
+          <SectionTitle>Latest collections</SectionTitle>
+
           <CardGrid assets={assets}/>
         
     </div>

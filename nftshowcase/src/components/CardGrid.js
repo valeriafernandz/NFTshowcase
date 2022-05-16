@@ -4,14 +4,12 @@ import {CardContainer, Card} from "./styles/CardGrid.styled";
 
 
 const CardGrid = ({assets}) => {
-  return (<div className='card-grid'>{assets.map(asset=>(
-    <CardContainer>
+  return (<CardContainer>{assets.map(asset=>(
         <Card>
             <CardItem key={asset.id} asset={asset}></CardItem>
         </Card>
-    </CardContainer>
   ))}
-    </div>)
+    </CardContainer>)
 }
 
 export default CardGrid;
