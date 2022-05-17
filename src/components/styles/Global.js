@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
     margin: 0;
-    
+
   }
   p {
     opacity: 0.6;
@@ -21,6 +21,8 @@ const GlobalStyles = createGlobalStyle`
   img {
     max-width: 100%;
 }
+
+
 `
 
 export default GlobalStyles

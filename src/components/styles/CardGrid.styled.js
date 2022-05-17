@@ -26,7 +26,7 @@ export const CardContainer = styled.div`
 `
 
 export const Card = styled.div`
-    flex: 0 0 20%;
+    
     flex-direction: column;
     background-color: #fff;
     font-size: 1.5rem;
@@ -37,6 +37,29 @@ export const Card = styled.div`
     &:hover{
         transform: translateY(-1.5rem) scale(1.03);
     }
+
+    @media (min-width: 320px) and (max-width:480){
+        flex: 0 0 100%;
+      
+      }
+      @media (min-width: 481px) and (max-width:768px) {
+        flex: 0 0 100%;
+      }
+      @media (min-width: 769px) and (max-width:1024px) {
+        flex: 0 0 50%;
+      }
+      @media (min-width: 1025px) and (max-width:1200px) {
+        flex: 0 0 40%;
+      }
+      @media (min-width: 1201px) and (max-width:1400px) {
+        flex: 0 0 30%;
+      }
+      @media (min-width: 1401px) and (max-width:1899px) {
+        flex: 0 0 30%;
+      }
+      @media (min-width: 1900px) {
+        flex: 0 0 20%;
+      }
 `
 
 export const CardImgContainer = styled.div`

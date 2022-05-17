@@ -11,7 +11,7 @@ function Header() {
             <HeaderTitleBox>
                     <HeaderTitle>NFT Showcase</HeaderTitle>
                     <HeaderSubtitle>Discover the latest collections</HeaderSubtitle>
-                    <ButtonHeader>Discover collections</ButtonHeader>
+                    <ButtonHeader href='#'>Discover collections</ButtonHeader>
             </HeaderTitleBox>
         </StyledHeader>
   )

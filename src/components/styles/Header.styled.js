@@ -28,19 +28,33 @@ export const HeaderTitleBox = styled.div`
     transform: translateY(-50%);
     text-align: center;
 
-    @media (min-width: 800px) {
-        left: 10vw;
-      }
+    
+    @media (min-width: 320px) and (max-width:480){
+        left: 8vw;
 
-      @media (min-width: 1200px) {
+    }
+    @media (min-width: 481px) and (max-width:768px) {
+        left: 8vw;
+    }
+    @media (min-width: 769px) and (max-width:1024px) {
+        left: 8vw;
+    }
+    @media (min-width: 1025px) and (max-width:1200px) {
+        top: 45vh;
+        left: 8vw;
+    }
+    @media (min-width: 1201px) and (max-width:1400px) {
         top: 45vh;
         left: 10vw;
-      }
-
-      @media (min-width: 1500px) {
+    }
+    @media (min-width: 1401px) and (max-width:1899px) {
+        top: 40vh;
+        left: 15vw;
+    }
+    @media (min-width: 1900px) {
         left: 20vw;
-      }
-    
+    }
+
 `
 
 export const HeaderTitle = styled.span`

@@ -24,9 +24,7 @@ function App() {
       <GlobalStyles/>
           <Header/>
           <SectionTitle>Latest collections</SectionTitle>
-
           <CardGrid assets={assets}/>
-        
     </div>
   );
 }
